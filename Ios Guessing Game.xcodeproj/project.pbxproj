@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD8FDBEB216E34D300366E49 /* Difficulty .swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8FDBEA216E34D300366E49 /* Difficulty .swift */; };
 		DDB688FF216CF7EB00B37DD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB688FE216CF7EB00B37DD8 /* AppDelegate.swift */; };
-		DDB68901216CF7EB00B37DD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB68900216CF7EB00B37DD8 /* ViewController.swift */; };
+		DDB68901216CF7EB00B37DD8 /* Custom Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB68900216CF7EB00B37DD8 /* Custom Difficulty.swift */; };
 		DDB68904216CF7EB00B37DD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB68902216CF7EB00B37DD8 /* Main.storyboard */; };
 		DDB68906216CF7EC00B37DD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDB68905216CF7EC00B37DD8 /* Assets.xcassets */; };
 		DDB68909216CF7EC00B37DD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB68907216CF7EC00B37DD8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD8FDBEA216E34D300366E49 /* Difficulty .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Difficulty .swift"; sourceTree = "<group>"; };
 		DDB688FB216CF7EB00B37DD8 /* Ios Guessing Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ios Guessing Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB688FE216CF7EB00B37DD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DDB68900216CF7EB00B37DD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DDB68900216CF7EB00B37DD8 /* Custom Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom Difficulty.swift"; sourceTree = "<group>"; };
 		DDB68903216CF7EB00B37DD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDB68905216CF7EC00B37DD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDB68908216CF7EC00B37DD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,7 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				DDB688FD216CF7EB00B37DD8 /* Ios Guessing Game */,
-				DDB688FC216CF7EB00B37DD8 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,13 +50,16 @@
 				DDB688FB216CF7EB00B37DD8 /* Ios Guessing Game.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		DDB688FD216CF7EB00B37DD8 /* Ios Guessing Game */ = {
 			isa = PBXGroup;
 			children = (
 				DDB688FE216CF7EB00B37DD8 /* AppDelegate.swift */,
-				DDB68900216CF7EB00B37DD8 /* ViewController.swift */,
+				DD8FDBEA216E34D300366E49 /* Difficulty .swift */,
+				DDB68900216CF7EB00B37DD8 /* Custom Difficulty.swift */,
+				DDB688FC216CF7EB00B37DD8 /* Products */,
 				DDB68902216CF7EB00B37DD8 /* Main.storyboard */,
 				DDB68905216CF7EC00B37DD8 /* Assets.xcassets */,
 				DDB68907216CF7EC00B37DD8 /* LaunchScreen.storyboard */,
@@ -135,7 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDB68901216CF7EB00B37DD8 /* ViewController.swift in Sources */,
+				DDB68901216CF7EB00B37DD8 /* Custom Difficulty.swift in Sources */,
+				DD8FDBEB216E34D300366E49 /* Difficulty .swift in Sources */,
 				DDB688FF216CF7EB00B37DD8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
