@@ -10,40 +10,40 @@ import UIKit
 
 
 
-class Difficulty : UIViewController {
-    var range = 0...10
-    var amountOfGuesses:Int = 0
-    
-    @IBOutlet weak var Easy: UIButton!
-    
-    @IBOutlet weak var Medium: UIButton!
-    
-    @IBOutlet weak var Hard: UIButton!
-    
-    @IBOutlet weak var Custom: UIButton!
-    
-    @IBAction func easyIsSelected() {
-        range = 1...100
-        amountOfGuesses = 10
-    }
-    
-    @IBAction func mediumIsSelected() {
-        range = 1...100
-        amountOfGuesses = 5
-    }
-    
-    @IBAction func hardIsSelected() {
-        range = 1...100
-        amountOfGuesses = 2
-    }
-    @IBAction func customIsSelected() {
-        var customSelected = true 
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-}
 
+    
+
+class SelectDifficultyViewController: UIViewController {
+    
+    
+    
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard let guessingGameViewController = segue.destination as? ViewController else{
+            return
+        }
+        
+        
+        switch segue.identifier {
+        case "EasyButtonToGame":
+            guessingGameViewController.maximumNumber = 50
+            guessingGameViewController.guessesRemaining = 10
+        case "HardGame":
+            guessingGameViewController.maximumNumber = 500
+            guessingGameViewController.guessesRemaining = 5
+        case "MediumGame":
+            guessingGameViewController.maximumNumber = 150
+            guessingGameViewController.guessesRemaining = 5
+        default:
+            break
+        }
+    }
+    
+    
+    
+    
+    
+}
 
